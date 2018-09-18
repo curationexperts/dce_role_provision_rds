@@ -10,7 +10,7 @@ rds_db_engine:                # Pick from mariadb, MySQL, oracle-se1, oracle-se2
 
 rds_subnet:
 
-rds_security_groups: [] #Up to 5, must use the sg-XXXXXXXX format
+rds_security_groups: []       #Up to 5, must use the sg-XXXXXXXX format
 
 
 
