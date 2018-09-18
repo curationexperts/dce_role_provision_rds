@@ -22,7 +22,8 @@ rds_security_groups: []       #Up to 5, must use the sg-XXXXXXXX format
 ## Override defaults here ####
 
 #rds_instance_type: db.t2.small
-#rds_engine_version:
+#rds_db_engine: MySQL
+#rds_engine_version: 5.6.39
 #rds_size: 20
 #rds_publicly_accessible: no
 
