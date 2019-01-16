@@ -1,12 +1,13 @@
 ---
 # tasks file for dce_role_provision_rds
-- name: Set relative path for calling role
-  set_fact:
-    relative_role_path: "{{ role_path }}"
+# Project_env files no longer needed
+#- name: Set relative path for calling role
+#  set_fact:
+#    relative_role_path: "{{ role_path }}"
 
-- name: Import local project enviroment vars
-  include_role:
-    name: dce_role_project_env
+#- name: Import local project enviroment vars
+#  include_role:
+#    name: dce_role_project_env
 
 - name: Include vars for target RDS host
   include_vars:
@@ -30,6 +31,7 @@
     subnet: "{{ rds_subnet }}"
     vpc_security_groups: "{{ rds_security_groups }}"
     publicly_accessible: "{{ rds_publicly_accessible }}"
+    region: "{{ aws_region }}"
   register: rds
 
 - set_fact:
