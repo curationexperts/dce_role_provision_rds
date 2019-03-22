@@ -27,7 +27,7 @@
   file:
     path: "{{ playbook_dir }}/facts.d/{{ inventory_hostname }}"
     state: directory
-    mode: 0644
+    mode: 0744
 
 - name: Create rds_facts.yml
   template:
